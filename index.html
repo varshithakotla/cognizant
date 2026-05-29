@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>City Council Portal</title>
+
+<style>
+
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Navigation */
+    nav{
+        background-color: #333;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav h1{
+        color: white;
+    }
+
+    nav a{
+        color: white;
+        text-decoration: none;
+        margin: 15px;
+        font-size: 20px;
+    }
+
+    nav a:hover{
+        color: yellow;
+    }
+
+    /* Welcome Banner */
+    #welcomebanner{
+        background-color: blue;
+        color: white;
+        height: 100px;
+        font-size: 45px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 100px;
+        margin-top: 20px;
+    }
+
+    h2{
+        color: #333;
+        text-align: center;
+    }
+
+    .highlight{
+        background-color: lightyellow;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    span{
+        color: red;
+        font-weight: bold;
+    }
+
+    section{
+        font-size: 30px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Form Styling */
+    .form-container{
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 400px;
+        margin: auto;
+        box-shadow: 0px 0px 10px gray;
+    }
+
+    .form-container input,
+    .form-container select,
+    .form-container textarea{
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+
+    .form-container button{
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 12px;
+        width: 100%;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .form-container button:hover{
+        background-color: darkblue;
+    }
+
+    /* Table Styling */
+    table{
+        width: 90%;
+        border-collapse: collapse;
+        margin: auto;
+        margin-top: 30px;
+        background-color: white;
+    }
+
+    table, th, td{
+        border: 1px solid black;
+    }
+
+    th{
+        padding: 15px;
+        color: white;
+        background-color: #333;
+        font-size: 22px;
+    }
+
+    td{
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Image Styling */
+    img{
+        border-radius: 10px;
+        border: 3px solid gray;
+        margin-top: 10px;
+    }
+
+    /* Help Link */
+    .help{
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <h1>Local Community Portal</h1>
+
+        <a href="#Home">Home</a>
+        <a href="#Events">Events</a>
+        <a href="#Contact">Contact</a>
+
+    </nav>
+
+    <!-- Welcome Banner -->
+    <div id="welcomebanner">
+        Welcome to the Event
+    </div>
+
+    <!-- Home Section -->
+    <section id="Home">Home Page</section>
+
+    <h2 class="highlight">Welcome to Home Page</h2>
+
+    <!-- Events Section -->
+    <section id="Events">Event Details</section>
+
+    <h2 class="highlight">Upcoming Events</h2>
+
+    <!-- Registration Form -->
+    <div class="form-container">
+
+        <label>Name:</label>
+        <input type="text"
+               id="name"
+               placeholder="Enter your name"
+               required
+               autofocus>
+
+        <label>Email:</label>
+        <input type="email"
+               id="email"
+               placeholder="Enter your email"
+               required>
+
+        <label>Event Date:</label>
+        <input type="date" id="date" required>
+
+        <label>Select the Event:</label>
+
+        <select id="event" required>
+            <option value="">Select Event</option>
+            <option>Dancing</option>
+            <option>Sports</option>
+            <option>Food Festival</option>
+        </select>
+
+        <label>Message:</label>
+
+        <textarea rows="4"
+                  placeholder="Enter your message"></textarea>
+
+        <button type="submit">Register</button>
+
+    </div>
+
+    <!-- Contact Section -->
+    <section id="Contact">Contact Details</section>
+
+    <h2 class="highlight">Contact Us</h2>
+
+    <!-- Help Link -->
+    <a class="help" href="help.html" target="_blank">
+        Need Help?
+    </a>
+
+    <!-- Table -->
+    <table>
+
+        <tr>
+            <th>Dances</th>
+            <th>Sports</th>
+            <th>Food</th>
+        </tr>
+
+        <tr>
+
+            <td>
+                Folk Dance <br>
+
+                <img src="https://www.studyiq.com/articles/wp-content/uploads/2022/11/12165610/Folk-Dances-of-India.jpg"
+                     alt="folk dances"
+                     width="200"
+                     height="150">
+            </td>
+
+            <td>
+                Football <br>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAp0KA3robkroVfS0lQTuILnzO7z9MdVONnA&s"
+                     alt="football"
+                     width="200"
+                     height="150">
+            </td>
+
+            <td>
+                Biryani <br>
+
+                <img src="https://www.maggiarabia.com/sites/default/files/styles/srh_recipes/public/srh_recipes/30c29da8aec1403f42e82552d927abab.png?h=4f5b30f1&itok=7l1fu_HB"
+                     alt="biryani"
+                     width="200"
+                     height="150">
+            </td>
+
+        </tr>
+
+    </table>
+
+    <br><br>
+
+    <center>
+        <span>Welcome to Local Community Portal</span>
+    </center>
+
+</body>
+</html>
