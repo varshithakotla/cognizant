@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Local Community Event Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="mainHeader">
+        <h1 style="color:red;">Community Event Portal</h1>
+
+        <nav>
+            <ul class="navMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="heroSection">
+        <h2>Welcome to Our Community</h2>
+        <p>
+            Discover local events, workshops, sports activities, and cultural celebrations happening around your city.
+        </p>
+    </section>
+
+    <!-- Event Cards -->
+    <section>
+        <h2 class="sectionTitle">Upcoming Events</h2>
+
+        <div class="eventCard">
+            <h3>Music Festival</h3>
+            <p>Enjoy live performances from local bands.</p>
+        </div>
+
+        <div class="eventCard">
+            <h3>Food Carnival</h3>
+            <p>Taste delicious dishes from different cuisines.</p>
+        </div>
+
+        <div class="eventCard">
+            <h3>Tech Workshop</h3>
+            <p>Learn web development and programming basics.</p>
+        </div>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2 class="sectionTitle">Event Schedule</h2>
+
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Location</th>
+            </tr>
+
+            <tr>
+                <td>Music Festival</td>
+                <td>10 June 2026</td>
+                <td>City Park</td>
+            </tr>
+
+            <tr>
+                <td>Food Carnival</td>
+                <td>15 June 2026</td>
+                <td>Main Ground</td>
+            </tr>
+
+            <tr>
+                <td>Tech Workshop</td>
+                <td>20 June 2026</td>
+                <td>Community Hall</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Form -->
+    <section>
+        <h2 class="sectionTitle">Register for Event</h2>
+
+        <form>
+
+            <input type="text" placeholder="Enter Name" required autofocus>
+
+            <input type="email" placeholder="Enter Email" required>
+
+            <input type="date" required>
+
+            <select required>
+                <option>Select Event</option>
+                <option>Music Festival</option>
+                <option>Food Carnival</option>
+                <option>Tech Workshop</option>
+            </select>
+
+            <textarea placeholder="Enter Message"></textarea>
+
+            <button type="submit" class="cta-button">
+                Register
+            </button>
+
+        </form>
+    </section>
+
+    <!-- Multi Column News -->
+    <section>
+        <h2 class="sectionTitle">Community Bulletin</h2>
+
+        <div class="newsArticle">
+            The city council is organizing multiple awareness programs,
+            cultural activities, sports events, and technical workshops for residents.
+            Citizens are encouraged to participate actively in all upcoming events.
+            The portal helps residents stay informed about schedules, registrations,
+            announcements, and volunteer opportunities throughout the year.
+        </div>
+    </section>
+
+</body>
+</html>

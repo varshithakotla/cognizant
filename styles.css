@@ -1,0 +1,192 @@
+/* Universal Selector */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body Styling */
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f2f2f2;
+    background-image:url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+    background-size:cover;
+    background-attachment:fixed;
+    color:#222;
+    padding:20px;
+}
+
+/* Header Styles */
+#mainHeader{
+    background:linear-gradient(to right, #0052D4, #4364F7);
+    padding:20px;
+    text-align:center;
+    color:white;
+    border-radius:10px;
+}
+
+/* Navigation Menu */
+.navMenu{
+    list-style:none;
+    margin-top:15px;
+}
+
+.navMenu li{
+    display:inline-block;
+    margin:10px;
+}
+
+.navMenu a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    padding:8px 15px;
+}
+
+/* Link States */
+.navMenu a:hover{
+    background:white;
+    color:#0052D4;
+    border-radius:5px;
+}
+
+.navMenu a:active{
+    color:yellow;
+}
+
+.navMenu a:visited{
+    color:#ddd;
+}
+
+/* Hero Section */
+.heroSection{
+    background:rgba(255,255,255,0.8);
+    padding:30px;
+    margin-top:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* h2 Styling */
+h2{
+    margin-bottom:15px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+/* Group Selector */
+h3,p{
+    line-height:1.6;
+}
+
+/* Section Title */
+.sectionTitle{
+    margin-top:30px;
+    margin-bottom:20px;
+    color:#0052D4;
+}
+
+/* Event Card */
+.eventCard{
+    background:white;
+    border:2px solid #ccc;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    outline:2px solid transparent;
+}
+
+/* Event Card Hover */
+.eventCard:hover{
+    outline:2px solid blue;
+}
+
+/* CTA Button */
+.cta-button{
+    background-color:#007BFF;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    margin-top:10px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+/* Form Styling */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+input, textarea, select{
+    padding:10px;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+/* Table Styling */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th, td{
+    border:1px solid gray;
+    padding:15px;
+    text-align:center;
+}
+
+th{
+    background:#0052D4;
+    color:white;
+}
+
+/* Zebra Striping */
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+/* Multi Column Layout */
+.newsArticle{
+    column-count:2;
+    column-gap:30px;
+    column-rule:1px solid gray;
+    background:white;
+    padding:20px;
+    margin-top:20px;
+    border-radius:10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width:768px){
+
+    .navMenu li{
+        display:block;
+        margin:10px 0;
+    }
+
+    body{
+        padding:10px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    h2{
+        font-size:18px;
+    }
+
+    .newsArticle{
+        column-count:1;
+    }
+
+    table{
+        font-size:14px;
+    }
+}
