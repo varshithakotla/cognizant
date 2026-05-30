@@ -8,7 +8,7 @@ const Eventname="community event";
 const date="2026-05-28";
 let seats=50;
 
-console.log(`event : ${eventname}
+console.log(`event : ${Eventname}
     date : ${date}
     seats : ${seats}`);
 
@@ -18,7 +18,7 @@ console.log(`event : ${eventname}
     seats--;
      console.log(`seats available after registration: ${seats}`);
 
-const event= [
+const events= [
     {
         name: "play area",
         date: "2026-05-31",
@@ -38,7 +38,7 @@ const event= [
     console.log("display only valid events");
     const today=new Date();
     events.forEach(event=>{
-            const evenDate = new Date();
+            const evenDate = new Date(event.date);
 if(eventDate >= today && event.seats>0){
     console.log(`events : ${event.name}
     date : ${event.date}
@@ -146,6 +146,94 @@ console.log("Event 1 Details:");
 Object.entries(event1).forEach(([key, value]) => {
     console.log(`${key}: ${value}`);
 });
+
+document
+.getElementById("registrationForm")
+.addEventListener("submit", function(event){
+
+    event.preventDefault();
+    const form = event.target;
+
+    const username =
+        form.elements["username"].value;
+
+    const email =
+        form.elements["email"].value;
+
+    const selectedEvent =
+        form.elements["event"].value;
+
+    let valid = true;
+    if(username === ""){
+
+        document.getElementById(
+            "nameError"
+        ).textContent = "Name required";
+
+        valid = false;
+    }
+
+    if(email === ""){
+        document.getElementById(
+            "emailError"
+        ).textContent = "Email required";
+
+        valid = false;
+    }
+    if(valid){
+        console.log(username,email,selectedEvent);
+    }
+});
+
+function submitRegistration(userData){
+
+    setTimeout(() => {
+
+        fetch(
+            "https://jsonplaceholder.typicode.com/posts",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type":
+                    "application/json"
+                },
+                body: JSON.stringify(userData)
+            }
+        )
+
+        .then(response => response.json())
+
+        .then(data => {
+
+            document.getElementById(
+                "message"
+            ).textContent =
+            "Registration Successful";
+
+            console.log(data);
+        })
+
+        .catch(error => {
+            document.getElementById(
+                "message"
+            ).textContent =
+            "Registration Failed";
+            console.log(error);
+        });
+    }, 2000);
+}
+
+console.log("Form Submitted");
+console.log("User Name:", username);
+console.log("Email:", email);
+console.log("Selected Event:", selectedEvent);
+$("#registerBtn").click(function(){
+
+    alert("Registered Successfully");
+
+});
+$("#eventCard").fadeOut();
+$("#eventCard").fadeIn();
 
 
 
