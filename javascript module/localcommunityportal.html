@@ -17,6 +17,28 @@
 
      <input type="text" id="searchBox" placeholder="Search Event">
     <div id="eventContainer"></div>
+
+    <form id="registrationForm">
+
+    <input type="text" name="username" placeholder="Name">
+    <span id="nameError"></span>
+
+    <input type="email" name="email" placeholder="Email">
+    <span id="emailError"></span>
+
+    <select name="event">
+        <option>Music Festival</option>
+        <option>Sports Meet</option>
+    </select>
+
+    <button type="submit">Register</button>
+
+</form>
+<p id="message"></p>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="main.js"></script>
+
+
 </body>
 </html>
