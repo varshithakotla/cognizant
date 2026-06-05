@@ -5,18 +5,10 @@ public class LeapYear {
         System.out.print("Enter a year: ");
         int n = sc.nextInt();
 
-        if (n % 4 == 0) {
-
-            if (n % 100 == 0) {
-                if (n % 400 == 0) {
-                    System.out.println(n + " is a Leap Year.");
-                } else {
-                    System.out.println(n + " is NOT a Leap Year.");
-                }
-            } else {
+        if ((n % 4 == 0 && n % 100 == 0 ) || (n % 400 == 0 )) {
                 System.out.println(n + " is a Leap Year.");
             }
-        } else {
+        else {
             System.out.println(n + " is NOT a Leap Year.");
         }
     }
