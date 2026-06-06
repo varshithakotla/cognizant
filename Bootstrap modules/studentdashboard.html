@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container py-4">
+        <h2 class="text-center md-4">Student dashboard</h2>
+        <div class="row g-4 mb-4">
+        
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card text-center shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">total students</h5>
+                        <h2 class="text-primary">500</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">present students</h5>
+                        <h2 class="text-primary">450</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">absent students</h5>
+                        <h2 class="text-primary">50</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">placements</h5>
+                        <h2 class="text-primary">320</h2>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="searchInput" placeholder="search student by name...">
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped" id="studentTable">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>roll no</th>
+                            <th>name</th>
+                            <th>branch</th>
+                            <th>attendance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <th>varshitha</th>
+                            <th>CSE</th>
+                            <td><span class="badge bg-primary">present</span></td>
+                        </tr>
+                         <tr>
+                            <th>2</th>
+                            <th>shashi</th>
+                            <th>CSE</th>
+                            <td><span class="badge bg-primary">absent</span></td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>vaish</th>
+                            <th>CSE</th>
+                            <td><span class="badge bg-primary">present</span></td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>chinnu</th>
+                            <th>CSM</th>
+                            <td><span class="badge bg-primary">present</span></td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>abhi</th>
+                            <th>CSE</th>
+                            <td><span class="badge bg-primary">absent</span></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
